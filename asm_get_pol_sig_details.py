@@ -51,7 +51,7 @@ class AsmAutomator(object):
         #return self.s.delete(url, params=kwargs, verify=False)
 
         # Calling requests library directly, should remove once installed fixed code
-        response = requests.delete(url, params=kwargs, auth=requests.auth.HTTPBasicAuth('admin', '@mike5651'), verify=False)
+        response = requests.delete(url, params=kwargs, auth=requests.auth.HTTPBasicAuth('admin', 'pass'), verify=False)
         return response.text
 
 
